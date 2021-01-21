@@ -1,0 +1,1 @@
+alert("Hey js is called inside java mvc code.")
