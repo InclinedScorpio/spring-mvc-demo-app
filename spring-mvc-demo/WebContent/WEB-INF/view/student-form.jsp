@@ -26,7 +26,8 @@
 		
 		<!-- Behind the scene student.getCountries_list() is called -->
 		<form:select path="country">
-			<form:options items="${student.countries_list}" />	
+			<!-- <form:options items="${student.countries_list}" />	-->
+			<form:options items="${countriesList}" />	
 		</form:select>	
 		</form:form>
 
