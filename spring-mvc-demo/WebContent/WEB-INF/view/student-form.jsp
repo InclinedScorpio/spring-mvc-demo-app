@@ -13,9 +13,20 @@
 		<br/><br/>
 		LastName: <form:input type="text" path="lastName" />
 		
-		<input type="submit" value="submit" />
 		<br/><br/>
 		
+		<h4>Your favourite Langage</h4>
+		<!-- Calls student.setFavouriteLang(....) when submitted -->
+		<!--
+		Java :	<form:radiobutton path="favouriteLang" value="Java" />
+		C++ : 	<form:radiobutton path="favouriteLang" value="C++" />
+		C :		<form:radiobutton path="favouriteLang" value="C" />
+		JS :	<form:radiobutton path="favouriteLang" value="JS" />   
+		-->
+		
+		<form:radiobuttons path="favouriteLang" items="${student.languagesList}" />
+		
+		<br/><br/>
 		<!-- 
 		<form:select path="country">
 			<form:option value="India" label="India" />
@@ -29,6 +40,9 @@
 			<!-- <form:options items="${student.countries_list}" />	-->
 			<form:options items="${countriesList}" />	
 		</form:select>	
+		
+		<input type="submit" value="submit" />
+		
 		</form:form>
 
 </html>
