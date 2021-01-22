@@ -1,3 +1,4 @@
+<%@ taglib 	uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
 <title>Welcome</title>
@@ -11,5 +12,12 @@
 	<br/>
 	<!--  Calls student.getFavouriteLang() -->
 	<h3>Favourite Language Choosen : ${student.favouriteLang}</h3>
+	<br/><br>
+	<h2>OS Selected</h2>
+	<ul>
+	<c:forEach var="os" items="${student.operatingSystems}">
+	<li> ${os} </li>
+	</c:forEach>
+	</ul>
 </body>
 </html>

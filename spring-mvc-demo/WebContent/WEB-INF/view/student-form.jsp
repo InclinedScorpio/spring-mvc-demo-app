@@ -41,6 +41,12 @@
 			<form:options items="${countriesList}" />	
 		</form:select>	
 		
+		<h2>OS - Worked With :</h2>
+		Linux : <form:checkbox path="operatingSystems" value="Linux" />
+		Mac OS : <form:checkbox path="operatingSystems" value="MacOS" />
+		Windows : <form:checkbox path="operatingSystems" value="Windows" />
+		Kali : <form:checkbox path="operatingSystems" value="Kali" />
+		
 		<input type="submit" value="submit" />
 		
 		</form:form>
