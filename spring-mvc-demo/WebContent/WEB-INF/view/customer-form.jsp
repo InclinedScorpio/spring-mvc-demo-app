@@ -22,6 +22,15 @@
 		<form:errors path="lastName" cssClass="red" />
 		
 		<br/>
+		tickets: <form:input path="tickets" /> 
+		<form:errors path="tickets" cssClass="red" />
+		
+		<br/>
+		
+		Postal Code: <form:input type="text" path="postalCode" />
+		<form:errors path="postalCode" cssClass="red" />
+		
+		<br/>
 		<form:button type="submit">Submit</form:button>
 	</form:form>
 	

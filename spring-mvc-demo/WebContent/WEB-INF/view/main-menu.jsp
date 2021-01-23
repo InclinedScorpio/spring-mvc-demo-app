@@ -8,7 +8,8 @@
 <a href="hello/hello-form">Click to open Name Form :)</a>
 <br /> <br />
 <a href="student/form">Click to open student form :--)</a>
-
+<br /> <br />
+<a href="customer/form">Click to open Customer form  :---3-)</a>
 </body>
  
 </html>
